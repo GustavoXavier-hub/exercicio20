@@ -22,6 +22,56 @@ StatusAgenteEnum status;
  @Entity
  @Table(name=" TBL_AGENTE_AUTUADOR")
  public class  AgenteAtuador{
+public Long getId() {
+		return id;
+	}
+
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+
+	public String getNome() {
+		return nome;
+	}
+
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+
+	public TipoAgenteEnum getTipo() {
+		return tipo;
+	}
+
+
+	public void setTipo(TipoAgenteEnum tipo) {
+		this.tipo = tipo;
+	}
+
+
+	public StatusAgenteEnum getStatus() {
+		return status;
+	}
+
+
+	public void setStatus(StatusAgenteEnum status) {
+		this.status = status;
+	}
+
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+
+
 @Id
 @GeneratedValue
 @Column(name="ID_AGENTE")
